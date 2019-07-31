@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <script>
+      document.getElementsByTagName('html')[0].addEventListener('dragstart', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+    <div class="container">
+      <p>You can't copy me!</p>
+    </div>
+  </body>
+</html>
