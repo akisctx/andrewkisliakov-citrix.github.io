@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <script>
+      function removeWatermark() {
+        var element = document.getElementById("watermark");
+        if (element != null)
+        {
+          element.parentNode.removeChild(element);
+        }
+        setTimeout(removeWatermark, 1000);
+      }
+      setTimeout(removeWatermark, 1000);
+    </script>
+    <div class="container">
+      <p>You can't watermark me!</p>
+    </div>
+  </body>
+</html>
